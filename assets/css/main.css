@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&family=Space+Mono&display=swap');
+
+body {
+    font-family: "Space Mono", sans-serif;
+}
+
+:root {
+    --Very-dark-cyan: hsl(183, 100%, 15%);
+    --Dark-grayish-cyan: hsl(186, 14%, 43%);
+    --Grayish-cyan: hsl(184, 14%, 56%);
+    --Light-grayish-cyan: hsl(185, 41%, 84%);
+    --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
+}
+
+main {
+    display: grid;
+    place-items: center;
+}
+
+span {
+    letter-spacing: 0.9em;
+    text-align: justify;
+    font-weight: 700;
+    font-size: larger;
+    color: var(--Very-dark-cyan);
+}
+
+h5 {
+    text-align: left;
+    font-weight: 600;
+    font-size: small;
+    margin: 0;
+    margin-top: 40px;
+    color: var(--Grayish-cyan);
+}
+
+h6 {
+    text-align: left;
+    font-weight: 600;
+    font-size: small;
+    margin: 0;
+    margin-top: 40px;
+    color: var(--Light-grayish-cyan);
+}
+
+p {
+    text-align: left;
+    font-weight: 600;
+    font-size: small;
+    margin: 0;
+    color: var(--Dark-grayish-cyan);
+}
+
+.button {
+    font-family: Space Mono;
+    letter-spacing: 0.1em;
+    height: 30px;
+    width: 80px;
+    font-weight: 900;
+    border-radius: 4px;
+    max-inline-size: 80px;
+    border-color: var(--Very-dark-cyan);
+    text-align: center;
+    background-color: var(--Very-dark-cyan);
+    color: var(--White);
+    cursor: pointer;
+}
+
+.active {
+    color: var(--Very-dark-cyan);
+    background-color: var(--Light-grayish-cyan);
+}
+
+input {
+    height: 30px;
+    width: 265px;
+    margin-left: -25px;
+    border-style: groove;
+    border-radius: 4px;
+    background-color: var(--White);
+  }
+
+  .fontAwesome {
+    font-family: 'Helvetica', FontAwesome, sans-serif;
+  }
+
+.card {
+    height: 600px;
+    width: 900px;
+    background-color: var(--Light-grayish-cyan);
+    /* box-sizing: border-box; */
+    place-items: center;
+    display: grid;
+}
+
+.grid-container {
+    height: 300px;
+    width: 655px;
+    background-color: var(--White);
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 15px;
+    padding: 15px;
+}
+
+.grid-container>.left {
+    background-color: var(--Light-grayish-cyan);
+    text-align: center;
+    /* padding: 20px 0; */
+    padding-left: 30px;
+
+    font-size: 24px;
+    width: 290px;
+    border-radius: 15px;
+}
+
+.grid-container>.right {
+    background-color: var(--Very-dark-cyan);
+    text-align: center;
+    padding-left: 30px;
+    font-size: 24px;
+    width: 290px;
+    border-radius: 15px;
+}
+
+.item1 {
+    grid-row: 1 / span 4;
+}
+
+.item2 {
+    grid-row: 1 / span 4;
+    background-color: var(--Very-dark-cyan);
+}
+
+.reset {
+    height: 35px;
+    width: 260px;
+    margin-top: 90px;
+    margin-left: -25px;
+    color: var(--Very-dark-cyan);
+    font-weight: 600;
+    background-color: var(--Light-grayish-cyan);
+    border-radius: 5px;
+    max-inline-size: 300px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    font-family: Space Mono;
+    cursor: pointer;
+}
