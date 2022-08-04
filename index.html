@@ -28,7 +28,7 @@
   </style>
 </head>
 
-<body>
+<body onload="selectedOption()">
   <main>
     <div class="card">
 
@@ -37,52 +37,45 @@
       </div>
 
 
-      <div class="grid-container">
+      <div class="grid-container1">
         <div class="item1 left" class="input-icons">
           <h5>Bill</h5>
-          <input class="fontAwesome" placeholder="&#xf155;" type="number" name="bill">
+          <input class="fontAwesome input" placeholder="&#xf155;" type="number" id="inputBill" onkeyup="inputBill()">
           <h5 style="margin-top: 10px;">Select Tip %</h5>
-          <button style="margin-left: -20px;" id="button5" class="button">5%</button>
-          <button id="button10" class="button">10%</button>
-          <button id="button15" class="button">15%</button>
-          <button style="margin-left: -20px;" id="button25" class="button">25%</button>
-          <button id="button50" class="button">50%</button>
-          <button id="custom" class="button">Custom</button>
+          <button style="margin-left: -25px;" id="button5"onclick="inputPercent(5)" class="button">5%</button>
+          <button id="button10" class="button" onclick="inputPercent(10)">10%</button>
+          <button id="button15" class="button" onclick="inputPercent(15)">15%</button>
+          <button style="margin-left: -23px;" id="button25" class="button" onclick="inputPercent(25)">25%</button>
+          <button id="button50" class="button" onclick="inputPercent(50)">50%</button>
+          <input style="margin-left: 0px; width: 78px; height: 30; margin-top: 2px;" id="custom" placeholder="Custom" class="button-custom" onclick="inputPercent('custom')"
+            onkeyup="inputCustom()">
+
           <h5 style="margin-top: 10px;">Number of People</h5>
-          <input class="fontAwesome" placeholder="&#xf007;" type="number" name="numberOfPeople">
+          <input class="fontAwesome input" placeholder="&#xf007;" type="number" id="inputPeople" onkeyup="selectPeople()"> </input>
         </div>
+
 
 
         <div class="item2 right">
-          <h6>Tip Amount</h6>
-          <p>/ person</p>
-
-          <h6>Total</h6>
-          <p>/ person</p>
-          <button class="reset">
+          <div class="grid-container2">
+            <div class="item3" style="margin-top: 40px;">
+              <h6>Tip Amount</h6>
+              <p>/ person</p>
+              <h6>Total</h6>
+              <p>/ person</p>
+            </div>
+            <div class="item4" style="margin-top: 65px;">
+              <span style="margin-top: 0px;" class="output" id="outputTip">$0.00</span>
+              <span class="output" id="outputTotal">$0.00</span>
+            </div>
+          </div>
+          <button class="reset" onclick="inputPercent('reset')">
             RESET
           </button>
-
-
         </div>
-
-
-
       </div>
-
-
     </div>
-
-
-
-
-
-
-
-
     </div>
-
-
   </main>
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

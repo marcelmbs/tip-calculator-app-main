@@ -11,6 +11,8 @@ body {
     --Light-grayish-cyan: hsl(185, 41%, 84%);
     --Very-light-grayish-cyan: hsl(189, 41%, 97%);
     --White: hsl(0, 0%, 100%);
+    --Verdao: hsl(171, 67%, 45%);
+    --Reset-Inative: hsl(183, 78%, 23%);
 }
 
 main {
@@ -52,6 +54,35 @@ p {
     color: var(--Dark-grayish-cyan);
 }
 
+.input {
+    font-family: Space Mono;
+    width: 265px;
+    margin-left: -25px;
+    border-style: none;
+    border-radius: 4px;
+    background-color: var(--Very-light-grayish-cyan);
+    font-size: 24px;
+    font-weight: 900;
+    text-align: end;
+    text-decoration: solid;
+    text-decoration-color: var(--Very-dark-cyan);
+}
+
+.button-custom {
+    font-family: Space Mono;
+    letter-spacing: 0.1em;
+    height: 28px;
+    width: 79px;
+    font-weight: 700;
+    border-radius: 4px;
+    max-inline-size: 80px;
+    border-color: var(--Very-dark-cyan);
+    text-align: center;
+    background-color: var(--Very-dark-cyan);
+    color: var(--White);
+    border: none;
+}
+
 .button {
     font-family: Space Mono;
     letter-spacing: 0.1em;
@@ -64,7 +95,15 @@ p {
     text-align: center;
     background-color: var(--Very-dark-cyan);
     color: var(--White);
+    border: none;
+}
+
+.button:hover {
+    transition: 0.3s;
+    background-color: var(--Verdao);
+    color: var(--Very-dark-cyan);
     cursor: pointer;
+    border: none;
 }
 
 .active {
@@ -72,18 +111,9 @@ p {
     background-color: var(--Light-grayish-cyan);
 }
 
-input {
-    height: 30px;
-    width: 265px;
-    margin-left: -25px;
-    border-style: groove;
-    border-radius: 4px;
-    background-color: var(--White);
-  }
-
-  .fontAwesome {
+.fontAwesome {
     font-family: 'Helvetica', FontAwesome, sans-serif;
-  }
+}
 
 .card {
     height: 600px;
@@ -94,7 +124,7 @@ input {
     display: grid;
 }
 
-.grid-container {
+.grid-container1 {
     height: 300px;
     width: 655px;
     background-color: var(--White);
@@ -105,24 +135,38 @@ input {
     padding: 15px;
 }
 
-.grid-container>.left {
-    background-color: var(--Light-grayish-cyan);
-    text-align: center;
-    /* padding: 20px 0; */
-    padding-left: 30px;
+.grid-container2 {
+    height: 100px;
+    width: 255px;
+    display: grid;
+    background-color: var(black);
+    margin-top: 70;
+}
 
+.grid-container1>.left {
+    background-color: var(--White);
+    text-align: center;
+    padding-left: 30px;
     font-size: 24px;
     width: 290px;
     border-radius: 15px;
 }
 
-.grid-container>.right {
+.grid-container1>.right {
     background-color: var(--Very-dark-cyan);
     text-align: center;
     padding-left: 30px;
     font-size: 24px;
     width: 290px;
     border-radius: 15px;
+}
+
+.output {
+    letter-spacing: 0.01em;
+    display: inline-flex;
+    font-size: 40px;
+    color: var(--Verdao);
+    margin-top: 28px;
 }
 
 .item1 {
@@ -131,21 +175,47 @@ input {
 
 .item2 {
     grid-row: 1 / span 4;
+    background-color: var(--Light-grayish-cyan);
+}
+
+.item3 {
+    grid-row: 2 / span 3;
     background-color: var(--Very-dark-cyan);
+}
+
+.item4 {
+    grid-row: 2 / span 3;
+    background-color: var(--Very-dark-cyan);
+    width: 160px;
+
 }
 
 .reset {
     height: 35px;
     width: 260px;
-    margin-top: 90px;
+    margin-top: 135px;
     margin-left: -25px;
     color: var(--Very-dark-cyan);
     font-weight: 600;
-    background-color: var(--Light-grayish-cyan);
+    background-color: var(--Reset-Inative);
     border-radius: 5px;
     max-inline-size: 300px;
     text-align: center;
     letter-spacing: 0.01em;
     font-family: Space Mono;
     cursor: pointer;
+    border: none;
+}
+
+.reset-active {
+    color: var(--Very-dark-cyan);
+    background-color: var(--Light-grayish-cyan);
+}
+
+.reset:hover {
+    transition: 0.3s;
+    background-color: var(--Verdao);
+    color: var(--Orange);
+    cursor: pointer;
+    border: none;
 }
