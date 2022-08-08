@@ -68,6 +68,11 @@ p {
     text-decoration-color: var(--Very-dark-cyan);
 }
 
+.input__error {
+    outline: 2px solid var(--Red-Error);
+    color: var(--Red-Error);
+}
+
 .button-custom {
     font-family: Space Mono;
     letter-spacing: 0.1em;
@@ -83,6 +88,29 @@ p {
     border: none;
 }
 
+.button-custom:hover {
+    transition: 0.3s;
+    background-color: var(--Verdao);
+    color: var(--Orange);
+    cursor: pointer;
+    border: none;
+}
+
+.button-custom-active {
+    font-family: Space Mono;
+    letter-spacing: 0.1em;
+    height: 28px;
+    width: 79px;
+    font-weight: 700;
+    border-radius: 4px;
+    max-inline-size: 80px;
+    border-color: var(--Very-dark-cyan);
+    text-align: center;
+    background-color: var(--Light-grayish-cyan);
+    color: var(--Very-dark-cyan);
+    border: none;
+}
+
 .button {
     font-family: Space Mono;
     letter-spacing: 0.1em;
@@ -95,6 +123,21 @@ p {
     text-align: center;
     background-color: var(--Very-dark-cyan);
     color: var(--White);
+    border: none;
+}
+
+.button-active {
+    color: var(--Very-dark-cyan);
+    background-color: var(--Light-grayish-cyan);
+    font-family: Space Mono;
+    letter-spacing: 0.1em;
+    height: 30px;
+    width: 80px;
+    font-weight: 900;
+    border-radius: 4px;
+    max-inline-size: 80px;
+    border-color: var(--Very-dark-cyan);
+    text-align: center;  
     border: none;
 }
 
@@ -208,8 +251,20 @@ p {
 }
 
 .reset-active {
+    height: 35px;
+    width: 260px;
+    margin-top: 135px;
+    margin-left: -25px;
     color: var(--Very-dark-cyan);
-    background-color: var(--Light-grayish-cyan);
+    font-weight: 600;
+    background-color: var(--Verdao);
+    border-radius: 5px;
+    max-inline-size: 300px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    font-family: Space Mono;
+    cursor: pointer;
+    border: none;
 }
 
 .reset:hover {

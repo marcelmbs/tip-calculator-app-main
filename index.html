@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="PT-BR">
 
 <head>
   <meta charset="UTF-8">
@@ -28,7 +28,7 @@
   </style>
 </head>
 
-<body onload="selectedOption()">
+<body">
   <main>
     <div class="card">
 
@@ -47,7 +47,7 @@
           <button id="button15" class="button" onclick="inputPercent(15)">15%</button>
           <button style="margin-left: -23px;" id="button25" class="button" onclick="inputPercent(25)">25%</button>
           <button id="button50" class="button" onclick="inputPercent(50)">50%</button>
-          <input style="margin-left: 0px; width: 78px; height: 30; margin-top: 2px;" id="custom" placeholder="Custom" class="button-custom" onclick="inputPercent('custom')"
+          <input style="margin-left: 0px; width: 78px; height: 30; margin-top: 2px;" id="buttonCustom" placeholder="Custom" class="button-custom" onclick="inputPercent(1000)"
             onkeyup="inputCustom()">
 
           <h5 style="margin-top: 10px;">Number of People</h5>
@@ -69,7 +69,7 @@
               <span class="output" id="outputTotal">$0.00</span>
             </div>
           </div>
-          <button class="reset" onclick="inputPercent('reset')">
+          <button class="reset" id="buttonReset" onclick="inputPercent(0)">
             RESET
           </button>
         </div>
